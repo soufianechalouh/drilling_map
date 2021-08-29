@@ -28,7 +28,7 @@ class PlantsData(Resource):
     def get(self):
         print("hello")
         start_time = time.time()
-        df = pd.read_excel("./static/data_backup.xlsx", sheet_name="PLNT19")
+        df = pd.read_excel("./static/data_sample.xlsx", sheet_name="PLNT19")
         # print(df) #SEQPLT19 - PSTATABB - PNAME - LAT - LON
         read_at = time.time()
         print(f"time to read file: {read_at - start_time}")
